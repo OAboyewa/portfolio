@@ -1,19 +1,26 @@
 import "/src/styles/home.css"
 import "/src/styles/text.css"
+import "/src/styles/navigation.css"
 
 export default function Home() {
     return(
         <div id="home">
-            <aside>
-                <div>
-                    H
-                </div>
-                <div>
-                    A
-                </div>
-                <div>
-                    C
-                </div>
+            <aside className="nav-wrapper">
+                <nav>
+                    <span></span>
+                    <div className="node">
+                        H
+                    </div>
+                    <div className="node">
+                        A
+                    </div>
+                    <div className="node">
+                        A
+                    </div>
+                    <div className="node">
+                        C
+                    </div>
+                </nav>
             </aside>
             <div className="row">
                 <div className="column ft-primary t1">
