@@ -25,7 +25,7 @@ function App() {
             <span className="h1 ft-primary">I'm</span>
           </div>
           <div className="box" id="box-3" style={{backgroundColor: "transparent", transform: `translateZ(${(distance/9)+35}px)`}}>
-            <span className="h1 ft-primary">Oluwatobi Aboyewa</span>
+            <span className="h1 ft-primary">Tobi</span>
           </div>
         </div>
       </div>
