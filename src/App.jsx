@@ -15,22 +15,17 @@ function App() {
 
   return (
     <>
-      {/*<Home />*/}
+      {/*
       <div className="cnt-1">
         <div className="row" style={{backgroundColor: "transparent", border: "none"}}>
-          <div className="box" id="box-1" style={{backgroundColor: "transparent", transform: `translateZ(${(distance/3)+10}px)`}}>
-            <span className="h1 ft-primary">Hello</span>
+          <div className="box" id="box-1" style={{backgroundColor: "transparent", transform: `translateZ(${(distance/3)+5}px)`}}>
+            <span className="h1 ft-primary">Hello, I am Tobi Aboyewa <br /> a Front-End Developer <br /> based in Leigh-on-Sea, UK</span>
           </div>
-          <div className="box" id="box-2" style={{backgroundColor: "transparent", transform: `translateZ(${(distance/6)+25}px)`}}>
-            <span className="h1 ft-primary">I'm</span>
-          </div>
-          <div className="box" id="box-3" style={{backgroundColor: "transparent", transform: `translateZ(${(distance/9)+35}px)`}}>
-            <span className="h1 ft-primary">Tobi</span>
-          </div>
-        </div>
+        </div> 
       </div>
+      */}
       <div className="cnt-2">
-
+        <span className="h1 ft-primary">Hello, I am Tobi Aboyewa <br /> a Front-End Developer <br /> based in Leigh-on-Sea, UK</span>
       </div>
     </>
   )

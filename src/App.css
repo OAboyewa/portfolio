@@ -4,7 +4,7 @@
 }
 
 .cnt-1 {
-  height: 500vh;
+  height: 200vh;
   margin: 0;
   display: flex;
   flex-flow: column nowrap;
@@ -45,17 +45,7 @@
 
 .row .box:nth-child(1) {
   z-index: 5;
-  transform: translateZ(10px);
-}
-
-.row .box:nth-child(2) {
-  z-index: 15;
-  transform: translateZ(20px);
-}
-
-.row .box:nth-child(3) {
-  z-index: 25;
-  transform: translateZ(30px);
+  transform: translateZ(5px);
 }
 
 .box span {
