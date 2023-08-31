@@ -24,8 +24,13 @@ function App() {
         </div> 
       </div>
       */}
-      <div className="cnt-2">
-        <span className="h1 ft-primary">Hello, I am Tobi Aboyewa <br /> a Front-End Developer <br /> based in Leigh-on-Sea, UK</span>
+      <div className="hero">
+        <div className="hero-text">
+          <span className="h1 ft-primary">Hello, I am Tobi Aboyewa <br /> a Front-End Developer <br /> based in Bedfordshire, UK</span>
+        </div>
+      </div>
+      <div className="projects">
+        <span>projects</span>
       </div>
     </>
   )

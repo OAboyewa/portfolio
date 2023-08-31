@@ -51,3 +51,20 @@
 .box span {
   text-align: center;
 }
+
+ /* ROOT */
+div#root {
+  perspective: 1rem;
+  perspective-origin: center;
+}
+
+ /* START */
+ div.hero {
+  height: 100vh;
+  max-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+ 
