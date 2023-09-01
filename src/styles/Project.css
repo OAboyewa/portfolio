@@ -1,0 +1,13 @@
+div.pjt-cnt {
+    width: 300px;
+    margin: 10px;
+    box-sizing: border-box;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+div.pjt-thumbnail {
+    height: 300px;
+    background-color: lightgray;
+}

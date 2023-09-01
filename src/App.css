@@ -1,6 +1,7 @@
 #root {
   min-height: 100vh;
   display: grid;
+  justify-content: center;
 }
 
 .cnt-1 {
@@ -67,4 +68,18 @@ div#root {
   align-items: center;
  }
 
- 
+  /* PROJECTS */
+  div.stn-projects {
+
+  }
+
+  div.projects-title {
+    text-align: center;
+  }
+
+  div.projects {
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-content: center;
+  }
