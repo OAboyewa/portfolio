@@ -1,5 +1,6 @@
 div.pjt-cnt {
     width: 300px;
+    min-height: 358px;
     margin: 10px;
     box-sizing: border-box;
     background-color: white;

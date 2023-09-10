@@ -13,6 +13,26 @@
     font-size: 36px;
 }
 
+.h3 {
+    font-size: 28px;
+}
+
 .p1 {
-    font-size: 20px;
+    font-size: 18px;
+}
+
+.p2 {
+    font-size: 12px;
+}
+
+.lft-align {
+    text-align: left;
+}
+
+.rgt-align {
+    text-align: right;
+}
+
+.cnt-align {
+    text-align: center;
 }

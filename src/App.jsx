@@ -31,14 +31,21 @@ function App() {
         </div>
       </div>
       <div className="stn-projects">
-        <div className="projects-title h2 ft-primary">
+        <div className="h2 ft-primary cnt-align">
           <span>PROJECTS</span>
         </div>
         <div className="projects">
-          <Project title="wix-template" technologies={["HTML", "CSS", "JavaScript"]} liveHref="http://127.0.0.1:5173/"/>
+          <Project title="wix-template" technologies={"Html, Css, JavaScript, React"} liveHref="http://127.0.0.1:5173/"/>
           <Project title="wix-template" liveHref="http://127.0.0.1:5173/"/>
           <Project title="wix-template" liveHref="http://127.0.0.1:5173/"/>
+          <Project title="wix-template" liveHref="http://127.0.0.1:5173/" codeHref="http://127.0.0.1:5173/"/>
         </div>
+      </div>
+      <div className="stn-contacts">
+        <div className="h2 ft-primary cnt-align">
+          <span>CONTACT</span>
+        </div>
+
       </div>
     </>
   )

@@ -1,22 +1,26 @@
 import '/src/styles/Project.css';
 
-function Project({title, technologies, thumbnailHref, liveHref, repoHref}) {
+function Project({title, technologies, thumbnailHref, liveHref, codeHref}) {
     return (
         <div className="pjt-cnt">
             <div className="pjt-thumbnail">
                 <img src={thumbnailHref}/>
             </div>
-            <p>{title}</p>
-            <p>{technologies}</p>
+            <div>
+                <span className="p1 ft-primary">{title}</span>
+            </div>
+            <div>
+                <span className="p2 ft-primary">{technologies}</span>
+            </div>
             <div>
                 { liveHref &&
-                    <span>
+                    <span className="p2 ft-primary">
                         <a href={liveHref}>Live</a>
                     </span>
                 }
-                { repoHref &&
-                    <span>
-                        <a href={repoHref}>Code</a>
+                { codeHref &&
+                    <span className="p2 ft-primary">
+                        <a href={codeHref}>Code</a>
                     </span>
                 }
             </div>
