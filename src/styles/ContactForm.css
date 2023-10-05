@@ -1,0 +1,15 @@
+
+form.contact-cnt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.contact-fullname {
+    
+}
+
+form.contact-cnt .block-dp {
+    display: block;
+}
