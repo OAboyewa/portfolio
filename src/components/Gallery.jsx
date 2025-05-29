@@ -13,16 +13,16 @@ function Gallery() {
             }
         },
         {
-            imageSrc: "/images/pluto-software.svg", 
+            imageSrc: "/images/AI-Document-Chat.PNG", 
             tag: "personal", 
-            name: "AI File Reader",
+            name: "AI Document Chat",
             comments: "",
             style: {
                 backgroundColor: "#ff0000",
             }
         },
         {
-            imageSrc: "/images/pluto-software.svg", 
+            imageSrc: "/images/E-Signature-Tool.PNG", 
             tag: "personal", 
             name: "E-Signture Tool",
             comments: "",
@@ -72,7 +72,7 @@ function GalleryItem({imageSrc, style, tag, name, comments}) {
                     <span>{comments}</span>
                 </div>
                 <div className="item-content-footer">
-                    <span>Click to see details</span>
+                    <span style={{display: "none"}}>Click to see details</span>
                 </div>
             </div>
         </div>

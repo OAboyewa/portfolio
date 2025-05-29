@@ -4,6 +4,7 @@
 }
 
 .gallery-item {
+    max-width: 550px;
     height: 550px;
     max-height: 550px;
     position: relative;
@@ -25,6 +26,9 @@
         cursor: pointer;
     }
 }
+.gallery-item-img-wrp > .gallery-item-img {
+    width: 80%;
+}
 
 .gallery-item > .gallery-item-content {
     width: 100%;
@@ -41,6 +45,8 @@
     font-weight: 500;
     pointer-events: none;
     & > .item-content-header {
+        height: 62px;
+        max-height: 62px;
         padding: 10px 0px;
         margin: 10px;
         border-top: 1px solid white;
@@ -48,6 +54,9 @@
         & > span {
             display: block;
             margin-bottom: 3px;
+        }
+        & > span:last-child {
+            overflow: hidden;
         }
     }
     & > .item-content-footer {
