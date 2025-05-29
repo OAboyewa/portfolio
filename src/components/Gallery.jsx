@@ -4,7 +4,7 @@ import '../styles/gallery.css';
 function Gallery() {
     const projectsData = [
         {
-            imageSrc: "/public/images/pluto-software.svg", 
+            imageSrc: "/images/pluto-software.svg", 
             tag: "commercial", 
             name: "Pluto Software",
             comments: "@Concept Care Solutions Limited",
@@ -13,19 +13,19 @@ function Gallery() {
             }
         },
         {
-            imageSrc: "/public/images/pluto-software.svg", 
-            tag: "commercial", 
-            name: "Pluto Software",
-            comments: "@Concept Care Solutions Limited",
+            imageSrc: "/images/pluto-software.svg", 
+            tag: "personal", 
+            name: "AI File Reader",
+            comments: "",
             style: {
                 backgroundColor: "#ff0000",
             }
         },
         {
-            imageSrc: "/public/images/pluto-software.svg", 
+            imageSrc: "/images/pluto-software.svg", 
             tag: "personal", 
-            name: "Pluto Software",
-            comments: "@Concept Care Solutions Limited",
+            name: "E-Signture Tool",
+            comments: "",
             style: {
                 backgroundColor: "#2b68a4",
             }

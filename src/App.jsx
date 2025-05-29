@@ -1,18 +1,7 @@
-import { useEffect, useState } from 'react';
 import './App.css'
 import Gallery from './components/Gallery';
 
 function App() {
-  const [distance, setDistance] = useState(0);
-
-  useEffect(() => {
-    const html = document.querySelector("html");
-
-    document.addEventListener("scroll", (event) => {
-      setDistance(-html.scrollTop/10);
-    });
-  });
-
   return (
     <>
       <div className="header">
