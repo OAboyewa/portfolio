@@ -1,8 +1,6 @@
 import { useEffect, useState } from 'react';
 import './App.css'
-import Home from '/src/pages/Home.jsx';
-import Project from '/src/components/Project.jsx';
-import Contact from '/src/forms/Contact';
+import Gallery from './components/Gallery';
 
 function App() {
   const [distance, setDistance] = useState(0);
@@ -17,50 +15,61 @@ function App() {
 
   return (
     <>
-      {/*
-      <div className="cnt-1">
-        <div className="row" style={{backgroundColor: "transparent", border: "none"}}>
-          <div className="box" id="box-1" style={{backgroundColor: "transparent", transform: `translateZ(${(distance/3)+5}px)`}}>
-            <span className="h1 ft-primary">Hello, I am Tobi Aboyewa <br /> a Front-End Developer <br /> based in Leigh-on-Sea, UK</span>
-          </div>
-        </div> 
+      <div className="header">
+        <div className="left">
+          <p className="name">Aaron Aboyewa</p>
+        </div>
+        <div className="right">
+          <a href="https://www.linkedin.com/in/aaron-aboyewa-5980391b3/">
+            <img className="socal-badge" src="/badges/InBug-Black.png"/>
+          </a>
+        </div>
       </div>
-      */}
       <div className="hero">
-        <div className="hero-text">
-          <span className="h1 ft-primary">Hello, I am Tobi Aboyewa <br /> a Front-End Developer <br /> based in Bedfordshire, UK</span>
-        </div>
+        <span>Application IT Support/Junior Developer based in Bedfordshire, UK.</span>
       </div>
-      <div>
-        <div className="h2 ft-primary cnt-align">
-          <span>SKILLS</span>
-        </div>
-        <div className="row">
-          <div className="column badges-cnt">
-              <img className="badges-img" src="\src\images\badges\React-Icon.png" alt="React" />
-              <img className="badges-img" src="\src\images\badges\Git-Icon-1788C.png" alt="Git" />
-              <img className="badges-img" src="\src\images\badges\github-mark.png" alt="Github" />
-              <img className="badges-img" src="\src\images\badges\Vite-Icon.png" alt="Vite" />
-              <img className="badges-img" src="\src\images\badges\vscode-icon.png" alt="VSCode" />
+      <h3 >Projects</h3>
+      <Gallery />
+      <h3 className="section-break">About</h3>
+      <div className="about">
+        <p>
+          I am an Application Support/Junior Developer with hands-on commercial experience contributing to the development of two SaaS products 
+          currently in progress. With a strong foundation in HTML, CSS, JavaScript, and React, I bring a practical understanding of responsive 
+          design and version control using Git.
+        </p>
+        <p>
+          Working in real-world development teams has given me experience in Agile workflows, collaborating with designers 
+          and back-end developers, and writing clean, maintainable code that aligns with product requirements and user needs. 
+          I'm passionate about creating intuitive, accessible interfaces and continuously improving my skills to stay up-to-date with industry 
+          best practices.
+        </p>
+      </div>
+      <h3 className="section-break">Skills</h3>
+      <div className='skills'>
+        <div className='left-shadow'></div>
+        <div className='right-shadow'></div>
+        <div className="carousel">
+          <div className="badge-group">
+            <img className="badge" src="\badges\HTML5_Logo_128.png" />
+            <img className="badge" src="\badges\CSS Icon.png" />
+            <img className="badge" src="\badges\JavaScript-logo.png" />
+            <img className="badge" src="\badges\React-Icon.png" />
+            <img className="badge" src="\badges\Git-Icon-1788C.png"/>
+            <img className="badge" src="\badges\github-mark.png" />
+            <img className="badge" src="\badges\Vite-Icon.png"/>
+            <img className="badge" src="\badges\vscode-icon.png"/>
+          </div>
+          <div aria-hidden className="badge-group">
+            <img className="badge" src="\badges\HTML5_Logo_128.png" />
+            <img className="badge" src="\badges\CSS Icon.png" />
+            <img className="badge" src="\badges\JavaScript-logo.png" />
+            <img className="badge" src="\badges\React-Icon.png" />
+            <img className="badge" src="\badges\Git-Icon-1788C.png"/>
+            <img className="badge" src="\badges\github-mark.png" />
+            <img className="badge" src="\badges\Vite-Icon.png"/>
+            <img className="badge" src="\badges\vscode-icon.png"/>
           </div>
         </div>
-      </div>
-      <div className="stn-projects">
-        <div className="h2 ft-primary cnt-align">
-          <span>PROJECTS</span>
-        </div>
-        <div className="projects">
-          <Project title="wix-template" technologies="Html, Css, JavaScript, React" liveHref="http://127.0.0.1:5173/"/>
-          <Project title="wix-template" liveHref="http://127.0.0.1:5173/"/>
-          <Project title="wix-template" liveHref="http://127.0.0.1:5173/"/>
-          <Project title="wix-template" liveHref="http://127.0.0.1:5173/" codeHref="http://127.0.0.1:5173/"/>
-        </div>
-      </div>
-      <div className="stn-contacts">
-        <div className="h2 ft-primary cnt-align">
-          <span>CONTACT</span>
-        </div>
-        <Contact />
       </div>
     </>
   )

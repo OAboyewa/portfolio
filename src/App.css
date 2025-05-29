@@ -1,81 +1,114 @@
 #root {
+  max-width: 1280px;
   min-height: 100vh;
+  margin: 0px auto;
   display: grid;
-  justify-content: center;
 }
 
-.cnt-1 {
-  height: 200vh;
-  margin: 0;
+.section-break {
+  margin-top: 100px;
+}
+
+/* HEADER*/
+.header {
+  margin-top: 30px;
   display: flex;
-  flex-flow: column nowrap;
-  position: relative;
-  /*justify-content: center;
-  align-items: center;*/
+  & > .left, > .right {
+    width: 50%;
+  }
+  & > .left {
+
+  }
+  & > .right {
+    text-align: right;
+  }
 }
 
-.cnt-2 {
-  height: 100vh;
-  box-sizing: border-box;
+.header .name {
+  font-weight: 700;
 }
 
-.row {
-  width: 100%;
-  height: 100vh;
-  margin: 0;
-  /*background-color: transparent;*/
-  box-sizing: border-box;
-  position: sticky;
-  top: 0;
-  perspective: 1rem;
-  perspective-origin: center;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
+.header .socal-badge {
+  width: 40px;
 }
 
-.box {
-  /*
-  width: 300px;
+/* HERO */
+.hero {
   height: 300px;
-  */
-  position: absolute;
-}
-
-.row .box:nth-child(1) {
-  z-index: 5;
-  transform: translateZ(5px);
-}
-
-.box span {
-  text-align: center;
-}
-
- /* ROOT */
-div#root {
-  perspective: 1rem;
-  perspective-origin: center;
-}
-
- /* START */
- div.hero {
-  height: 100vh;
-  max-height: 100vh;
+  margin-bottom: 90px;
   display: flex;
-  justify-content: center;
-  align-items: center;
- }
+  flex-direction: column;
+  justify-content: end;
+}
 
-  /* PROJECTS */
-  div.stn-projects {
+.hero > span {
+  display: block;
+  font-size: 40px;
+  margin-bottom: 5px;
+}
 
+/* ABOUT */
+.about {
+  font-size: 30px;
+}
+
+/* SKILLS */
+.skills {
+  display: flex;
+  position: relative;
+}
+
+.left-shadow, .right-shadow {
+  width: 100px;
+  height: 100%;
+  filter: blur(5px);
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.left-shadow {
+  background: linear-gradient(to left, #ffffff, #ffffff);
+  left: -20px;
+}
+
+.right-shadow {
+  background: linear-gradient(to right, #ffffff, #ffffff);
+  right: -20px;
+}
+
+.carousel {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 20px 0;
+  overflow: hidden;
+  display: flex;
+  &:hover .badge-group {
+    animation-play-state: paused;
+    & .badge:hover {
+      filter: grayscale(0);
+    }
   }
+}
 
-  div.projects {
-    max-width: 1000px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-content: center;
+.badge-group .badge {
+  width: 100px;
+  color: white;
+  margin: 20px;
+  filter: grayscale(1);
+}
+
+.badge-group {
+  display: flex;
+  animation: horizontal-scrolling 10s linear infinite;
+  
+}
+
+@keyframes horizontal-scrolling {
+  0% {
+    transform: translateX(0);
   }
+  100% {
+    transform: translateX(-100%);
+  }
+}
